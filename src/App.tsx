@@ -51,7 +51,7 @@ export default function App() {
     console.log("fetching new data");
     /* global fetch */
     fetch(
-      'https://github.com/purvasingh96/Mapbox-react-app/blob/main/src/data/map3_modified.geojson'
+      'https://raw.githubusercontent.com/purvasingh96/Mapbox-react-app/main/src/data/map3_modified.geojson'
     )
       .then(resp => resp.json())
       .then(json => setAllData({json:json, dimensionMap:splitDimensions(json)}))
